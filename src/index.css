@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-display: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+
+  --color-surface: #faf9ff;
+  --color-surface-dim: #d7d9e6;
+  --color-surface-bright: #faf9ff;
+  --color-surface-container: #ebedfa;
+  --color-surface-container-low: #f1f3ff;
+  --color-surface-container-high: #e5e8f4;
+  --color-surface-container-highest: #e0e2ee;
+  --color-surface-subtle: #F0F3FA;
+  --color-surface-hover: #E0E3EB;
+  --color-surface-canvas: #FFFFFF;
+
+  --color-border-subtle: #E0E3EB;
+  --color-border-strong: #D1D4DC;
+
+  --color-primary: #0049db;
+  --color-primary-container: #2962ff;
+  --color-secondary: #131722;
+  --color-secondary-muted: #5a5e6b;
+  --color-outline: #737687;
+
+  --color-bullish: #089981;
+  --color-bearish: #F23645;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: #faf9ff;
+    color: #181b24;
+    overflow-x: hidden;
+  }
+
+  /* Ensure OpenType tabular numbers for jitter-free prices */
+  .tabular-numbers {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Custom scrollbars for high-density tables */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #c3c5d8;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #737687;
+}

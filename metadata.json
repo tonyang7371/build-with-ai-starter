@@ -1,0 +1,6 @@
+{
+  "name": "Market Terminal UI",
+  "description": "High-density institutional-grade market terminal and financial workstation for real-time asset screening, technical charting, depth order book, sector heatmaps, and simulated execution.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
